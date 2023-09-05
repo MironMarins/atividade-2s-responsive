@@ -1,6 +1,6 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
-import Menu from './components/Menu'
+import Menu from './components/menu'
 import Rodape from './components/Rodape'
 function App() {
   return (
@@ -12,5 +12,4 @@ function App() {
   )
 }
 export default App
-
 
