@@ -6,3 +6,29 @@ import Home from './routes/Home/index'
 import Produtos from './routes/Produtos/index'
 import Error from './routes/Error/index'
 import EditarProdutos from './routes/EditarProdutos/index'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/Produtos',
+        element: <Produtos />
+      },
+      {
+        path: '/produtos/editar/:id',
+        element: <EditarProdutos />
+      },
+      {
+        path: '/antiga',
+        element: <Navigate to='/' />
+      }
+    ]
+  }
+])
