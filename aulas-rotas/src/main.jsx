@@ -7,6 +7,8 @@ import Produtos from './routes/Produtos/index'
 import Error from './routes/Error/index'
 import EditarProdutos from './routes/EditarProdutos/index'
 
+import App from './App.jsx'
+import './index.css'
 const router = createBrowserRouter([
   {
     path: '/',
